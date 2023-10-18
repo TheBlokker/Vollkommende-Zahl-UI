@@ -12,3 +12,4 @@ doesn't work as thinked
 
 you can build by your self or download it from here().
 
+![Bild Vollkommende Zahlen](https://github.com/TheBlokker/theblokker.github.io/blob/main/img/dev4.PNG)
