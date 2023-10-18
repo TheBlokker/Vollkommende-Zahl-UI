@@ -39,31 +39,32 @@
             close_btn = new Button();
             chck_btn = new Button();
             label3 = new Label();
-            remove_btn = new Button();
+            listboxResults = new ListBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Cursor = Cursors.Help;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            label1.Location = new Point(231, 9);
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
+            label1.Location = new Point(210, 9);
             label1.Name = "label1";
-            label1.Size = new Size(190, 25);
+            label1.Size = new Size(211, 30);
             label1.TabIndex = 0;
             label1.Text = "Vollkommende Zahl";
             label1.TextAlign = ContentAlignment.TopCenter;
+            label1.Click += label1_Click;
             // 
             // calc_btn
             // 
             calc_btn.AccessibleDescription = "Überprüft";
             calc_btn.Cursor = Cursors.Hand;
             calc_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            calc_btn.Location = new Point(439, 172);
+            calc_btn.Location = new Point(427, 172);
             calc_btn.Name = "calc_btn";
-            calc_btn.Size = new Size(104, 29);
-            calc_btn.TabIndex = 1;
-            calc_btn.Text = "Überprüfen";
+            calc_btn.Size = new Size(123, 29);
+            calc_btn.TabIndex = 2;
+            calc_btn.Text = "✔Überprüfen";
             calc_btn.UseVisualStyleBackColor = true;
             calc_btn.Click += calc_btn_Click;
             // 
@@ -73,7 +74,7 @@
             input_txtbox.Location = new Point(194, 172);
             input_txtbox.Name = "input_txtbox";
             input_txtbox.Size = new Size(227, 29);
-            input_txtbox.TabIndex = 2;
+            input_txtbox.TabIndex = 1;
             input_txtbox.KeyPress += input_txtbox_enter;
             // 
             // label2
@@ -108,10 +109,10 @@
             // 
             reset_btn.Cursor = Cursors.Hand;
             reset_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            reset_btn.Location = new Point(78, 423);
+            reset_btn.Location = new Point(12, 423);
             reset_btn.Name = "reset_btn";
             reset_btn.Size = new Size(114, 33);
-            reset_btn.TabIndex = 6;
+            reset_btn.TabIndex = 5;
             reset_btn.Text = "Zurücksetzen";
             reset_btn.UseVisualStyleBackColor = true;
             reset_btn.Click += reset_btn_Click;
@@ -120,10 +121,10 @@
             // 
             about_btn.Cursor = Cursors.Hand;
             about_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            about_btn.Location = new Point(12, 423);
+            about_btn.Location = new Point(12, 384);
             about_btn.Name = "about_btn";
             about_btn.Size = new Size(60, 33);
-            about_btn.TabIndex = 7;
+            about_btn.TabIndex = 4;
             about_btn.Text = "About";
             about_btn.UseVisualStyleBackColor = true;
             about_btn.Click += about_btn_Click;
@@ -134,20 +135,21 @@
             close_btn.Cursor = Cursors.Hand;
             close_btn.FlatAppearance.BorderColor = SystemColors.ButtonShadow;
             close_btn.FlatAppearance.BorderSize = 4;
-            close_btn.Location = new Point(613, 423);
+            close_btn.Location = new Point(603, 425);
             close_btn.Name = "close_btn";
-            close_btn.Size = new Size(52, 33);
-            close_btn.TabIndex = 8;
-            close_btn.Text = "Close!";
+            close_btn.Size = new Size(66, 33);
+            close_btn.TabIndex = 6;
+            close_btn.Text = "❌Close!";
             close_btn.UseVisualStyleBackColor = false;
             close_btn.Click += close_btn_Click;
             // 
             // chck_btn
             // 
-            chck_btn.Location = new Point(301, 405);
+            chck_btn.Cursor = Cursors.Hand;
+            chck_btn.Location = new Point(284, 315);
             chck_btn.Name = "chck_btn";
-            chck_btn.Size = new Size(71, 44);
-            chck_btn.TabIndex = 9;
+            chck_btn.Size = new Size(137, 26);
+            chck_btn.TabIndex = 3;
             chck_btn.Text = "Check von 1-10.000";
             chck_btn.UseVisualStyleBackColor = true;
             chck_btn.Click += chck_btn_Click;
@@ -155,29 +157,34 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(357, 355);
+            label3.Location = new Point(321, 297);
             label3.Name = "label3";
             label3.Size = new Size(59, 15);
             label3.TabIndex = 10;
             label3.Text = "2. Modus ";
             label3.Click += label3_Click;
             // 
-            // remove_btn
+            // listboxResults
             // 
-            remove_btn.Location = new Point(378, 405);
-            remove_btn.Name = "remove_btn";
-            remove_btn.Size = new Size(75, 44);
-            remove_btn.TabIndex = 11;
-            remove_btn.Text = "remove it";
-            remove_btn.UseVisualStyleBackColor = true;
-            remove_btn.Click += remove_btn_Click;
+            listboxResults.BackColor = SystemColors.Control;
+            listboxResults.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            listboxResults.FormatString = "N2";
+            listboxResults.FormattingEnabled = true;
+            listboxResults.HorizontalScrollbar = true;
+            listboxResults.ImeMode = ImeMode.On;
+            listboxResults.ItemHeight = 15;
+            listboxResults.Location = new Point(132, 377);
+            listboxResults.Name = "listboxResults";
+            listboxResults.Size = new Size(465, 79);
+            listboxResults.TabIndex = 7;
+            listboxResults.MouseHover += listoxResults_hover;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(678, 461);
-            Controls.Add(remove_btn);
+            Controls.Add(listboxResults);
             Controls.Add(label3);
             Controls.Add(chck_btn);
             Controls.Add(label1);
@@ -211,6 +218,6 @@
         private Button close_btn;
         private Button chck_btn;
         private Label label3;
-        private Button remove_btn;
+        private ListBox listboxResults;
     }
 }

@@ -109,6 +109,7 @@ namespace Vollkommende_Zahl
                 input_txtbox.Text = input_string;
                 solve_label.Text = solve_string;
                 output_label.Text = output_string;
+                listboxResults.Items.Clear();
             }
             else
             {
@@ -126,7 +127,9 @@ namespace Vollkommende_Zahl
         private void close_btn_Click(object sender, EventArgs e)
         {
             //close func
-            Close();
+            if (MessageBox.Show("Wollen Sie jetzt beenden?", "Beenden?", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3) == DialogResult.Yes)
+            { Close(); }
+
         }
 
         private void input_txtbox_enter(object sender, KeyPressEventArgs e)
@@ -141,13 +144,16 @@ namespace Vollkommende_Zahl
 
         private void chck_btn_Click(object sender, EventArgs e)
         {
-            string output_string = "";
+
             string solve_string = "";
             string input_string = "";
+            listboxResults.Items.Clear();
+            string endstring;
             Int64 input_int = 1;
 
             while (input_int < 10001)
             {
+                string output_string = "";
                 //calc for Vollkommenheit
                 //List for dividers
                 List<int> teiler = new List<int>();
@@ -173,6 +179,8 @@ namespace Vollkommende_Zahl
                     {
                         output_string += String.Join(",", item + ",");
                     }
+                    endstring = $"{input_int} ist eine vollkommene Zahl.\nDie Teiler : {output_string}";
+                    listboxResults.Items.Add(endstring);
                     MessageBox.Show($"{input_int} ist eine vollkommene Zahl.\nDie Teiler : {output_string}", "Test bis 10.000", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
@@ -188,6 +196,16 @@ namespace Vollkommende_Zahl
         private void remove_btn_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Joke", ".", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void listoxResults_hover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
