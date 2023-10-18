@@ -15,3 +15,4 @@ C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\ne
 C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.genruntimeconfig.cache
 C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\ref\Vollkommende Zahl.dll
 C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende_Zahl.AboutBox1.resources
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende_Zahl.Properties.Resources.resources
