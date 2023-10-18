@@ -133,5 +133,61 @@ namespace Vollkommende_Zahl
         {
             //not used or i forgót it
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chck_btn_Click(object sender, EventArgs e)
+        {
+            string output_string = "";
+            string solve_string = "";
+            string input_string = "";
+            Int64 input_int = 1;
+
+            while (input_int <10001)
+            {
+                //calc for Vollkommenheit
+                //List for dividers
+                List<int> teiler = new List<int>();
+                for (int i = 1; i <= (input_int / 2); i++)
+                {
+                    if (input_int % i == 0)
+                    {
+                        teiler.Add(i);
+                    }
+                }
+                int result = 0;
+
+                //adding to equale a item
+                foreach (int item in teiler)
+                {
+                    result += item;
+                }
+                //create true string
+                if (result == input_int)
+                {
+                    solve_string = (input_int + " ist eine vollkommene Zahl.\nDie Teiler : ");
+                    foreach (int item in teiler)
+                    {
+                        output_string += String.Join(",", item + ",");
+                    }
+                    MessageBox.Show($"{input_int} ist eine vollkommene Zahl.\nDie Teiler : {output_string}", "Test bis 10.000", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                if (input_int == 10000)
+                {
+                    MessageBox.Show("10.000 erreicht", "Test bis 10.000", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                input_int++;
+            }
+            
+        }
+
+        private void remove_btn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Joke", ".", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
