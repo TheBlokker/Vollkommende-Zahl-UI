@@ -19,6 +19,7 @@ namespace Vollkommende_Zahl
 
         private void calc_btn_Click(object sender, EventArgs e)
         {
+
             //formating input to int
             string output_string = "";
             string solve_string = "";
@@ -64,7 +65,7 @@ namespace Vollkommende_Zahl
                     solve_string = (input_int + " ist eine vollkommene Zahl.\nDie Teiler : ");
                     foreach (int item in teiler)
                     {
-                        output_string += String.Join(", ", ", " + item);
+                        output_string += String.Join(", ", item + ", ");
                     }
                 }
                 else
@@ -78,8 +79,10 @@ namespace Vollkommende_Zahl
             else
             {
                 MessageBox.Show("Number is higher as 10.000 or low/is as 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 return;
             }
+
 
         }
 
@@ -119,6 +122,11 @@ namespace Vollkommende_Zahl
         private void close_btn_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void input_txtbox_enter(object sender, KeyPressEventArgs e)
+        {
+            
         }
     }
 }

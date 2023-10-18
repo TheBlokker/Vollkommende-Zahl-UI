@@ -42,6 +42,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Cursor = Cursors.Help;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             label1.Location = new Point(205, 10);
             label1.Name = "label1";
@@ -54,6 +55,7 @@
             // calc_btn
             // 
             calc_btn.AccessibleDescription = "Überprüft";
+            calc_btn.Cursor = Cursors.Hand;
             calc_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             calc_btn.Location = new Point(439, 172);
             calc_btn.Name = "calc_btn";
@@ -70,10 +72,12 @@
             input_txtbox.Name = "input_txtbox";
             input_txtbox.Size = new Size(260, 29);
             input_txtbox.TabIndex = 2;
+            input_txtbox.KeyPress += input_txtbox_enter;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Cursor = Cursors.No;
             label2.Location = new Point(180, 238);
             label2.Name = "label2";
             label2.Size = new Size(56, 15);
@@ -93,6 +97,7 @@
             // solve_label
             // 
             solve_label.AutoSize = true;
+            solve_label.Cursor = Cursors.AppStarting;
             solve_label.Location = new Point(301, 238);
             solve_label.Name = "solve_label";
             solve_label.Size = new Size(210, 15);
@@ -101,6 +106,7 @@
             // 
             // reset_btn
             // 
+            reset_btn.Cursor = Cursors.Hand;
             reset_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             reset_btn.Location = new Point(78, 423);
             reset_btn.Name = "reset_btn";
@@ -112,6 +118,7 @@
             // 
             // about_btn
             // 
+            about_btn.Cursor = Cursors.Hand;
             about_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             about_btn.Location = new Point(12, 423);
             about_btn.Name = "about_btn";
@@ -123,9 +130,10 @@
             // 
             // close_btn
             // 
-            close_btn.Location = new Point(590, 433);
+            close_btn.Cursor = Cursors.Hand;
+            close_btn.Location = new Point(613, 423);
             close_btn.Name = "close_btn";
-            close_btn.Size = new Size(75, 23);
+            close_btn.Size = new Size(52, 33);
             close_btn.TabIndex = 8;
             close_btn.Text = "Close!";
             close_btn.UseVisualStyleBackColor = true;
@@ -135,16 +143,16 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(677, 461);
+            ClientSize = new Size(678, 461);
+            Controls.Add(label1);
+            Controls.Add(input_txtbox);
+            Controls.Add(calc_btn);
             Controls.Add(close_btn);
             Controls.Add(about_btn);
             Controls.Add(reset_btn);
             Controls.Add(solve_label);
             Controls.Add(output_label);
             Controls.Add(label2);
-            Controls.Add(input_txtbox);
-            Controls.Add(calc_btn);
-            Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
