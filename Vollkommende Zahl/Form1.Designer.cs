@@ -37,6 +37,9 @@
             reset_btn = new Button();
             about_btn = new Button();
             close_btn = new Button();
+            chck_btn = new Button();
+            label3 = new Label();
+            remove_btn = new Button();
             SuspendLayout();
             // 
             // label1
@@ -139,11 +142,44 @@
             close_btn.UseVisualStyleBackColor = false;
             close_btn.Click += close_btn_Click;
             // 
+            // chck_btn
+            // 
+            chck_btn.Location = new Point(301, 405);
+            chck_btn.Name = "chck_btn";
+            chck_btn.Size = new Size(71, 44);
+            chck_btn.TabIndex = 9;
+            chck_btn.Text = "Check von 1-10.000";
+            chck_btn.UseVisualStyleBackColor = true;
+            chck_btn.Click += chck_btn_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(357, 355);
+            label3.Name = "label3";
+            label3.Size = new Size(59, 15);
+            label3.TabIndex = 10;
+            label3.Text = "2. Modus ";
+            label3.Click += label3_Click;
+            // 
+            // remove_btn
+            // 
+            remove_btn.Location = new Point(378, 405);
+            remove_btn.Name = "remove_btn";
+            remove_btn.Size = new Size(75, 44);
+            remove_btn.TabIndex = 11;
+            remove_btn.Text = "remove it";
+            remove_btn.UseVisualStyleBackColor = true;
+            remove_btn.Click += remove_btn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(678, 461);
+            Controls.Add(remove_btn);
+            Controls.Add(label3);
+            Controls.Add(chck_btn);
             Controls.Add(label1);
             Controls.Add(input_txtbox);
             Controls.Add(calc_btn);
@@ -173,5 +209,8 @@
         private Button reset_btn;
         private Button about_btn;
         private Button close_btn;
+        private Button chck_btn;
+        private Label label3;
+        private Button remove_btn;
     }
 }
