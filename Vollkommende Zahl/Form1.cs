@@ -109,5 +109,16 @@ namespace Vollkommende_Zahl
 
             }
         }
+
+        private void about_btn_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aboutBox = new AboutBox1();
+            aboutBox.ShowDialog();
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

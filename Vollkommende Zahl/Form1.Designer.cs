@@ -35,6 +35,8 @@
             output_label = new Label();
             solve_label = new Label();
             reset_btn = new Button();
+            about_btn = new Button();
+            close_btn = new Button();
             SuspendLayout();
             // 
             // label1
@@ -99,19 +101,43 @@
             // 
             // reset_btn
             // 
-            reset_btn.Location = new Point(576, 423);
+            reset_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            reset_btn.Location = new Point(78, 423);
             reset_btn.Name = "reset_btn";
-            reset_btn.Size = new Size(89, 23);
+            reset_btn.Size = new Size(114, 33);
             reset_btn.TabIndex = 6;
             reset_btn.Text = "Zurücksetzen";
             reset_btn.UseVisualStyleBackColor = true;
             reset_btn.Click += reset_btn_Click;
+            // 
+            // about_btn
+            // 
+            about_btn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            about_btn.Location = new Point(12, 423);
+            about_btn.Name = "about_btn";
+            about_btn.Size = new Size(60, 33);
+            about_btn.TabIndex = 7;
+            about_btn.Text = "About";
+            about_btn.UseVisualStyleBackColor = true;
+            about_btn.Click += about_btn_Click;
+            // 
+            // close_btn
+            // 
+            close_btn.Location = new Point(590, 433);
+            close_btn.Name = "close_btn";
+            close_btn.Size = new Size(75, 23);
+            close_btn.TabIndex = 8;
+            close_btn.Text = "Close!";
+            close_btn.UseVisualStyleBackColor = true;
+            close_btn.Click += close_btn_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(677, 461);
+            Controls.Add(close_btn);
+            Controls.Add(about_btn);
             Controls.Add(reset_btn);
             Controls.Add(solve_label);
             Controls.Add(output_label);
@@ -137,5 +163,7 @@
         private Label output_label;
         private Label solve_label;
         private Button reset_btn;
+        private Button about_btn;
+        private Button close_btn;
     }
 }
