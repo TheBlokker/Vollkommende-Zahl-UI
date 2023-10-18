@@ -1,0 +1,16 @@
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\bin\Release\net6.0-windows\Vollkommende Zahl.exe
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\bin\Release\net6.0-windows\Vollkommende Zahl.deps.json
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\bin\Release\net6.0-windows\Vollkommende Zahl.runtimeconfig.json
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\bin\Release\net6.0-windows\Vollkommende Zahl.dll
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\bin\Release\net6.0-windows\Vollkommende Zahl.pdb
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende_Zahl.Form1.resources
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.csproj.GenerateResource.cache
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.AssemblyInfoInputs.cache
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.AssemblyInfo.cs
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.csproj.CoreCompileInputs.cache
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.dll
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\refint\Vollkommende Zahl.dll
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.pdb
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\Vollkommende Zahl.genruntimeconfig.cache
+C:\Users\Timm\source\repos\Vollkommende Zahl UI\Vollkommende Zahl\obj\Release\net6.0-windows\ref\Vollkommende Zahl.dll
