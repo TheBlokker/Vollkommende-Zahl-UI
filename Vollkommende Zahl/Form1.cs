@@ -146,7 +146,7 @@ namespace Vollkommende_Zahl
             string input_string = "";
             Int64 input_int = 1;
 
-            while (input_int <10001)
+            while (input_int < 10001)
             {
                 //calc for Vollkommenheit
                 //List for dividers
@@ -182,7 +182,7 @@ namespace Vollkommende_Zahl
                 }
                 input_int++;
             }
-            
+
         }
 
         private void remove_btn_Click(object sender, EventArgs e)

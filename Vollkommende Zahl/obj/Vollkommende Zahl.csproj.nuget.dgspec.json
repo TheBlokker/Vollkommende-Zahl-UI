@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Timm\\source\\repos\\Vollkommende Zahl UI\\Vollkommende Zahl\\Vollkommende Zahl.csproj": {}
+    "C:\\Users\\Timm\\source\\repos\\Vollkommende-Zahl-UI\\Vollkommende Zahl\\Vollkommende Zahl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Timm\\source\\repos\\Vollkommende Zahl UI\\Vollkommende Zahl\\Vollkommende Zahl.csproj": {
+    "C:\\Users\\Timm\\source\\repos\\Vollkommende-Zahl-UI\\Vollkommende Zahl\\Vollkommende Zahl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Timm\\source\\repos\\Vollkommende Zahl UI\\Vollkommende Zahl\\Vollkommende Zahl.csproj",
+        "projectUniqueName": "C:\\Users\\Timm\\source\\repos\\Vollkommende-Zahl-UI\\Vollkommende Zahl\\Vollkommende Zahl.csproj",
         "projectName": "Vollkommende Zahl",
-        "projectPath": "C:\\Users\\Timm\\source\\repos\\Vollkommende Zahl UI\\Vollkommende Zahl\\Vollkommende Zahl.csproj",
+        "projectPath": "C:\\Users\\Timm\\source\\repos\\Vollkommende-Zahl-UI\\Vollkommende Zahl\\Vollkommende Zahl.csproj",
         "packagesPath": "C:\\Users\\Timm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Timm\\source\\repos\\Vollkommende Zahl UI\\Vollkommende Zahl\\obj\\",
+        "outputPath": "C:\\Users\\Timm\\source\\repos\\Vollkommende-Zahl-UI\\Vollkommende Zahl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
