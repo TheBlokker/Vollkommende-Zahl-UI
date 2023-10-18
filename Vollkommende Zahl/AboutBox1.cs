@@ -104,6 +104,7 @@ namespace Vollkommende_Zahl
 
         private void okButton_Click(object sender, EventArgs e)
         {
+            //close funcs
             Close();
         }
     }

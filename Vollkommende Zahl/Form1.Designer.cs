@@ -44,13 +44,12 @@
             label1.AutoSize = true;
             label1.Cursor = Cursors.Help;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            label1.Location = new Point(205, 10);
+            label1.Location = new Point(231, 9);
             label1.Name = "label1";
             label1.Size = new Size(190, 25);
             label1.TabIndex = 0;
             label1.Text = "Vollkommende Zahl";
             label1.TextAlign = ContentAlignment.TopCenter;
-            label1.Click += label1_Click;
             // 
             // calc_btn
             // 
@@ -68,9 +67,9 @@
             // input_txtbox
             // 
             input_txtbox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            input_txtbox.Location = new Point(161, 172);
+            input_txtbox.Location = new Point(194, 172);
             input_txtbox.Name = "input_txtbox";
-            input_txtbox.Size = new Size(260, 29);
+            input_txtbox.Size = new Size(227, 29);
             input_txtbox.TabIndex = 2;
             input_txtbox.KeyPress += input_txtbox_enter;
             // 
@@ -78,21 +77,19 @@
             // 
             label2.AutoSize = true;
             label2.Cursor = Cursors.No;
-            label2.Location = new Point(180, 238);
+            label2.Location = new Point(194, 238);
             label2.Name = "label2";
             label2.Size = new Size(56, 15);
             label2.TabIndex = 3;
             label2.Text = "Ausgabe:";
-            label2.Click += label2_Click;
             // 
             // output_label
             // 
             output_label.AutoSize = true;
-            output_label.Location = new Point(301, 288);
+            output_label.Location = new Point(301, 284);
             output_label.Name = "output_label";
             output_label.Size = new Size(0, 15);
             output_label.TabIndex = 4;
-            output_label.Click += label3_Click;
             // 
             // solve_label
             // 
@@ -130,13 +127,16 @@
             // 
             // close_btn
             // 
+            close_btn.BackColor = SystemColors.ButtonFace;
             close_btn.Cursor = Cursors.Hand;
+            close_btn.FlatAppearance.BorderColor = SystemColors.ButtonShadow;
+            close_btn.FlatAppearance.BorderSize = 4;
             close_btn.Location = new Point(613, 423);
             close_btn.Name = "close_btn";
             close_btn.Size = new Size(52, 33);
             close_btn.TabIndex = 8;
             close_btn.Text = "Close!";
-            close_btn.UseVisualStyleBackColor = true;
+            close_btn.UseVisualStyleBackColor = false;
             close_btn.Click += close_btn_Click;
             // 
             // Form1
